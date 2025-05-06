@@ -1,0 +1,18 @@
+GET /products/_search HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+
+{
+  "query": {
+    "function_score": {
+      "query": {
+        "match": { "title": "ноутбук" }
+      },
+      "field_value_factor": {
+        "field": "rating",
+        "modifier": "sqrt",
+        "factor": 1.5
+      }
+    }
+  }
+}

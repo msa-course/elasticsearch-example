@@ -1,0 +1,19 @@
+GET /products/_search HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+
+{
+  "query": {
+    "nested": {
+      "path": "specs",
+      "query": {
+        "bool": {
+          "must": [
+            { "term": { "specs.name": "ОЗУ" } },
+            { "term": { "specs.value": "8 ГБ" } }
+          ]
+        }
+      }
+    }
+  }
+}

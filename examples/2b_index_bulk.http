@@ -1,0 +1,5 @@
+POST /products/_bulk HTTP/1.1
+Host: {{host}}
+Content-Type: application/x-ndjson
+
+< 2b_products_bulk.ndjson

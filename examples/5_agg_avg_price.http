@@ -1,0 +1,15 @@
+GET /products/_search HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+
+{
+  "size": 0,
+  "query": {
+    "term": { "category": "notebooks" }
+  },
+  "aggs": {
+    "avg_price": {
+      "avg": { "field": "price" }
+    }
+  }
+}

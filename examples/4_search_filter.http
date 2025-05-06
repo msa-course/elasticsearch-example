@@ -1,0 +1,17 @@
+GET /products/_search HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+
+{
+  "query": {
+    "bool": {
+      "must": {
+        "match": { "category": "notebooks" }
+      },
+      "filter": [
+        { "range": { "price": { "lte": 50000 } } },
+        { "term": { "in_stock": true } }
+      ]
+    }
+  }
+}

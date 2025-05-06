@@ -1,0 +1,4 @@
+{ "index": { "_id": "apple-macbook-air-m1" } }
+{ "title": "Apple MacBook Air M1", "brand": "Apple", "category": "notebooks", "price": 99990, "in_stock": true, "rating": 4.9, "specs": [ { "name": "ОЗУ", "value": "8 ГБ" }, { "name": "SSD", "value": "512 ГБ" } ] }
+{ "index": { "_id": "asus-vivobook-15" } }
+{ "title": "Ноутбук ASUS VivoBook 15", "brand": "ASUS", "category": "notebooks", "price": 51990, "in_stock": false, "rating": 4.3, "specs": [ { "name": "ОЗУ", "value": "8 ГБ" }, { "name": "SSD", "value": "256 ГБ" } ] }

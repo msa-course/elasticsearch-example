@@ -1,0 +1,16 @@
+PUT /products/_doc/hp-pavilion-14 HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+
+{
+  "title": "HP Pavilion 14",
+  "brand": "HP",
+  "category": "notebooks",
+  "price": 54990,
+  "in_stock": true,
+  "rating": 4.4,
+  "specs": [
+    { "name": "ОЗУ", "value": "16 ГБ" },
+    { "name": "SSD", "value": "512 ГБ" }
+  ]
+}
